@@ -1,0 +1,233 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('../../assets/Images/Background/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 181px 455px 180px 456px;
+    width: 100%;
+    opacity: 1;
+}
+
+.container {
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.login-form {
+    background: #181A1CD6;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    width: 500px;
+    height: 560px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.logo-container img {
+    margin-right: 10px;
+    width: 50px;
+    height: 44px;
+    padding: 4px 4.17px 3.67px 3.27px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+.logo-container h1 {
+    font-family: 'Londrina Solid', sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+    margin: 0;
+    color: #FFFFFF;
+}
+
+.title {
+    color: #FFFFFF;
+    font-family: 'Lato';
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 35.2px;
+    text-align: center;
+
+}
+
+p {
+    margin-bottom: 20px;
+    color: #FFFFFF;
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: center;
+
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+    color: #FFFFFF;
+    font-family: 'Lato';
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25.2px;
+    letter-spacing: 0.20000000298023224px;
+
+
+}
+
+
+
+
+
+
+
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input-group input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #fcf2e33b;
+    border-radius: 24px;
+    background-color: transparent;
+    /* Makes the background transparent */
+    color: #FFFFFF;
+    /* Sets the text color to white for readability */
+    outline: none;
+    /* Removes the default outline */
+    box-shadow: none;
+    /* Removes any box shadow that may be used for focus indication */
+
+
+    /* padding: 14px 20px 14px 20px;
+gap: 10px;
+border-radius: 24px 0px 0px 0px;
+border: 1px 0px 0px 0px;
+opacity: 0px; */
+
+
+}
+
+.input-group input:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.input-group input::placeholder {
+    color: #CCCCCC;
+    /* Sets the placeholder text color to a light gray */
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+.forget-pass {
+    font-family: Lato;
+    font-weight: bold;
+}
+
+.actions a {
+    color: #C1C2C4;
+    text-decoration: none;
+    font-family: Lato;
+
+
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 24px;
+    background-color: #3D4142;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+
+button.google-login {
+    background-color: transparent;
+    border: 1px solid #E7E3FC3B;
+    /* Adjust the color and opacity as needed */
+    color: #FFFFFF;
+    /* Text color */
+    padding: 10px 20px;
+    /* Adjust padding as needed */
+    font-size: 16px;
+    /* Adjust font size as needed */
+    cursor: pointer;
+    outline: none;
+    /* Remove default outline */
+
+}
+
+.google-login {
+    background-color: transparent;
+    border: 1px solid #E7E3FC3B;
+    color: #333;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.google-logo {
+    width: 20px;
+    /* Adjust size as needed */
+    height: 20px;
+    /* Adjust size as needed */
+    margin-right: 10px;
+    /* Adjust spacing as needed */
+}
+
+.google-login:hover {
+    background-color: #E7E3FC;
+}
+
+
+
+button:hover {
+    opacity: 0.9;
+}
+
+.or {
+    margin: 20px 0;
+    font-weight: bold;
+    color: #9D9EA1;
+}
