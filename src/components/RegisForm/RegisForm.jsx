@@ -17,7 +17,7 @@ const RegisForm = () => {
         <div className="container">
             <div className="login-form">
                 <div className="logo-container">
-                    <img src="./assets/Images/director-logo.svg" alt="Chill Logo" />
+                    <img src="./src/assets/Images/Icon/director-logo.svg" alt="Chill Logo" />
 
 
                     <h1>CHILL</h1>
@@ -38,7 +38,7 @@ const RegisForm = () => {
                                 placeholder="Masukkan kata sandi" 
                             />
                             <img
-                                src={passwordVisible ? "assets/img/eye-slash-icon.png" : "assets/img/eye-icon.png"}
+                                src={passwordVisible ? "./src/assets/Images/Iconeye-slash-icon.png" : "./src/assets/Images/Icon/eye-icon.png"}
                                 className="toggle-password"
                                 alt="Toggle Password Visibility"
                                 onClick={() => togglePasswordVisibility('password')}
@@ -54,7 +54,7 @@ const RegisForm = () => {
                                 placeholder="Masukkan kata sandi"
                             />
                             <img
-                                src={confirmPasswordVisible ? "assets/img/eye-slash-icon.png" : "assets/img/eye-icon.png"}
+                                src={confirmPasswordVisible ? "./src/assets/Images/Icon/eye-slash-icon.png" : "./src/assets/Images/Icon/eye-icon.png"}
                                 className="toggle-password"
                                 alt="Toggle Password Visibility"
                                 onClick={() => togglePasswordVisibility('confirmPassword')}
@@ -67,7 +67,7 @@ const RegisForm = () => {
                     <button type="submit">Daftar</button>
                     <div className="or">Atau</div>
                     <button type="button" className="google-login">
-                        <img src="assets/img/google-logo.png" alt="Google Logo" className="google-logo" />
+                        <img src="./src/assets/Images/Icon/google-logo.png" alt="Google Logo" className="google-logo" />
                         Daftar Dengan Google
                     </button>
                 </form>
