@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
-import './RegisForm.css'; // Ensure that your CSS is located in the styles folder
+import './RegisForm.css';
 
 const RegisForm = () => {
     const [passwordVisible, setPasswordVisible] = useState(false);
     const [confirmPasswordVisible, setConfirmPasswordVisible] = useState(false);
     const [formData, setFormData] = useState({
         username: '',
+        email: '',
         password: '',
         confirmPassword: ''
     });
@@ -28,24 +29,23 @@ const RegisForm = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         
-        // Basic validation (you can add more)
         if (formData.password !== formData.confirmPassword) {
             alert("Passwords do not match!");
             return;
         }
 
-        const response = await fetch('http://localhost:5173/api/register', {
+        const response = await fetch('http://localhost:5000/api/users/register', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify({
                 username: formData.username,
+                email: formData.email,
                 password: formData.password,
             }),
         });
         
-
         const data = await response.json();
         if (data.message) {
             alert(data.message);
@@ -72,6 +72,17 @@ const RegisForm = () => {
                             name="username"
                             placeholder="Masukkan username" 
                             value={formData.username}
+                            onChange={handleInputChange}
+                        />
+                    </div>
+                    <div className="input-group">
+                        <label htmlFor="email">Email</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Masukkan email"
+                            value={formData.email}
                             onChange={handleInputChange}
                         />
                     </div>
